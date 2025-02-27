@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const ACCESS_KEY = import.meta.env.VITE_ACCESS_KEY;
+const ACCESS_KEY = 'h2n-nGXirnVYaWH2vxt_D327O99T6JOGMRSuww3tdyU';
 
 export const fetchImages = async (query, page = 1) => {
   try {
