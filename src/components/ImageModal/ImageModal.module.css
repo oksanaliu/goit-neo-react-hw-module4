@@ -1,0 +1,109 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    position: relative;
+    background: white;
+    padding-bottom: 10px;
+    max-width: 90vw;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+.imageContainer {
+    max-width: 100%;
+    max-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 1200px;
+    height: 800px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.info {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.description {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+.author,
+.likes {
+    font-size: 14px;
+    color: #666;
+}
+
+.heart {
+    margin-right: 5px;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .modal {
+        max-width: 80vw;
+        max-height: 80vh;
+    }
+
+    .image {
+        max-width: 900px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .modal {
+        max-width: 90vw;
+        height: 700px;
+        max-height: 100%;
+    }
+
+    .image {
+        max-width: 600px;
+        max-height: 500px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .modal {
+        max-width: 90vw;
+        height: 620px;
+        max-height: 100%;
+    }
+
+    .image {
+        max-width: 600px;
+        max-height: 500px;
+    }
+}
