@@ -9,7 +9,7 @@ export const fetchImages = async (query, page = 1) => {
         query,
         page,
         per_page: 12,
-        client_id: import.meta.env.VITE_ACCESS_KEY,
+        client_id: ACCESS_KEY,
       },
     });
 
